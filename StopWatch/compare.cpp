@@ -160,21 +160,21 @@ void quickSort(std::vector<int> & a) {
 
 
 // TestStdSortTime
-void testStdSort(std::vector<int>& a) {
-    std::vector<int> v_copy = a;
+void testStdSort(std::vector<int> & a) {
+    std::vector<int> aList = a;
     Stopwatch timer;
     timer.start();
-    std::sort(v_copy.begin(), v_copy.end());
+    std::sort(aList.begin(), aList.end());
     timer.stop();
     std::cout << "Time: " << timer.elapsed() << std::endl;
 }
 
 // TestSortedTime
 void testSort(std::vector<int> & a, void (*sort)(std::vector<int>&)) {
-    std::vector<int> v_copy = a;
+    std::vector<int> aList = a;
     Stopwatch timer;
     timer.start();
-    sort(v_copy);
+    sort(aList);
     timer.stop();
     std::cout << "Time: "<< timer.elapsed() << std::endl;
 }
