@@ -11,4 +11,4 @@ Includes
 * Maze graphic using disjoint sets
 * Stopwatch feature comparing different Algorithms
 * Vector Workspace
-* 
+
